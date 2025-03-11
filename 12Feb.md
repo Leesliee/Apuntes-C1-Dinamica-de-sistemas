@@ -1,5 +1,9 @@
-# Titulo de la clase 
-El título de cada clase, correspondiente al tema general que se trabaje en clase. Siempre después de cada título de clase, redactar una breve introducción (mínimo un párrafo) que de una mirada general al tema
+# COnceptos preliminares e introducción a TL inversa
+
+## Introducción
+En esta clase, se exploraron los fundamentos de los sistemas dinámicos, comenzando por la definición de un sistema y su clasificación. Se analizó qué es un sistema dinámico y cómo su comportamiento cambia en función del tiempo (la base de la asignatura). También se discutieron los conceptos de planta y proceso, fundamentales en el análisis y control de sistemas.
+
+Además, se abordaron las características de las ecuaciones diferenciales, que son esenciales para el modelamiento sistemas físicos, y se diferenciaron entre sistemas lineales y no lineales. Finalmente, se observó la importancia de la transformada de Laplace y su inversa, una herramienta clave para resolver ecuaciones diferenciales y comprender la respuesta temporal de los sistemas.
 ## 1. Subtítulos
 Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
 
