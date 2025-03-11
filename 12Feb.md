@@ -1,4 +1,4 @@
-# COnceptos preliminares e introducción a TL inversa
+# Conceptos preliminares e introducción a TL inversa
 
 ## Introducción
 En esta clase, se exploraron los fundamentos de los sistemas dinámicos, comenzando por la definición de un sistema y su clasificación. Se analizó qué es un sistema dinámico y cómo su comportamiento cambia en función del tiempo (la base de la asignatura). También se discutieron los conceptos de planta y proceso, fundamentales en el análisis y control de sistemas.
