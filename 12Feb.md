@@ -86,6 +86,7 @@ En la figura 2, se observa una representación un poco más gráfica:
 
 Figura 2. TL
 
+Entre las propiedades de la TL, se puede ver la linealidad, una propiedad que se usa todo el tiempo.
 A continuación, se evidencian algunas transformadas importantes a tener en cuenta:
 ### 7.1. Transformada inversa de Laplace
 La transformada inversa de Laplace es cambiar una función del dominio de la frecuencia compleja al dominio del tiempo; se definde de la siguiente manera:
@@ -96,6 +97,15 @@ $$ \mathcal{L}^{-1}\{F(s)\} = f(t) = \frac{1}{2\pi i} \int_{\sigma - i\infty}^{\
 ![Figura 3](Imagenes/TLinv.png)
 
 Figura 3. TL inversa
+### 7.2. Propiedades de TL
+#### 7.2.2 Transformada de una función
+$$ \mathcal{L} {f(t) = F(S)$$
+#### 7.2.2 Transformada de la derivada
+$$\mathcal{L} \{ f^{n}(t) \} = s^n F(s) - s^{n-1} f(0) - \cdots - s f^{n-1}(0) - f^n(0)$$
+#### 7.2.3 Transformada de la integral
+\mathcal{L} \left\{ \int f(t) \, dt \right\} = \frac{1}{s} F(s)
+
+
 ## 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
 
