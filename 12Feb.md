@@ -32,7 +32,7 @@ El proceso es como la "receta" de lo que se hará; aunque en control se usa frec
 >🔑 *Modelo dinámico:* Un modelo dinámico es una expresión matemática que predecirá el comportamiento de un sistema dinámico y/o variable a lo largo del tiempo.
 
 Básicamente un modelo dinámico busca obtener una expresión matemática, en el caso de control, que relacione una variable de interés respecto al tiempo. Como se sabe, la derivada calcula una **variación**; en este caso de una variable respecto al tiempo:
-$$\fraq {df(t)}{dt}$$
+$$\frac {df(t)}{dt}$$
 ## 1. Subtítulos
 Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
 
