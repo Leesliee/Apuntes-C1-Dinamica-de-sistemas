@@ -61,13 +61,16 @@ Además, la validación no solo permite mejorar la precisión del modelo, sino q
 ## 6. Influencia de parámetros
 Según los parámetros, hay diferentes comportamientos de un sistema:
 ### 6.1. Comportamiento sinusoidal
-Un modelo se comporta sinusoidalmente cuando hay inexistencia de parámetros,
+Un modelo se comporta sinusoidalmente cuando hay inexistencia de parámetros.
+
 💡Ejemplo: Un péndulo ideal oscilando sin ningún tipo de fricción o resistencia al aire; se representaría mediante una amplitud y oscilación constante.
 ### 6.2. Comportamiento de decaimiento exponencial
 Un modelo se comporta decayendo exponencialmente cuando existe el parámetro de disipación de energía. 
+
 💡Ejemplo: Circuito eléctrico RC, donde la carga del capacitor disminuye con el tiempo de forma exponencial debido a la disipación de energía en la resistencia.
 ### 6.3. Combinados
 Un modelo se comporta de forma combinada cuando el sistema tiene oscilaciones "amortiguadas", cuando el sistema tiene una resistencia o fricción que no es lo suficientemente grande como para detener las oscilaciones de inmediato, pero sí las reduce con el tiempo. 
+
 💡Ejemplo: un péndulo oscilando en aceite. Su movimiento es inicialmente oscilatorio (sinusoidal), pero la fricción con el fluido provoca que la amplitud de las oscilaciones disminuya exponencialmente hasta detenerse.
 ## 7. Transformada de Laplace
 >*Transformada de Laplace:* Es una transformada que convierte una función de una variable real en el dominio del tiempo a una función de variable compleja en el dominio de la frecuencia (s). 
@@ -75,7 +78,15 @@ Un modelo se comporta de forma combinada cuando el sistema tiene oscilaciones "a
 Básicamente es una herramienta matemática utilizada para resolver ecuaciones diferenciales con condiciones iniciales. Es ampliamente aplicada en el análisis de sistemas dinámicos y circuitos eléctricos, ya que permite transformar ecuaciones diferenciales en ecuaciones algebraicas más sencillas de manejar. La transformada muestra componentes sinusoidales y exponenciales de la señal. Mediante la definición, es una integral impropia que va desde 0 hasta infinito como se evidencia en la siguiente ecuación:
 
 $$ f(t) \to F(S) $$
-$$ \mathcal{L}\{f(t)\} = F(s) = \int_0^{\infty} f(t) e^{-st} \, dt $$
+$$ \mathcal{L}\{f(t)\} = F(s) = \int_0^{\infty} f(t) e^{-st} \, dt $
+
+En la figura 2, se observa una representación un poco más gráfica:
+
+![Figura 2](Imagenes/TL.png)
+
+Figura 2, TL
+
+
 ## 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
 
