@@ -16,6 +16,10 @@ A continuación, se evidencian los principios fundamentales a tener en cuenta du
 Figura 1. Sistema
 
 A partir de modelos matemáticos, se representa lo que ocurre en la variable de salida si se modifica la entrada del sistema. En la Figura 1 se representa de manera básica un sistema.
+### 2.2. Sistema dinámico
+>🔑 *Sistema dinámico:* La dinámica de un sistema se basa en variables que varían respecto al tiempo. En pocas palabras, es un sistema que cambia a través del tiempo. 
+
+Básicamente, se le llama dinámico, si su salida en el *presente*
 ## 1. Subtítulos
 Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
 
