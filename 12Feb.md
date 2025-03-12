@@ -78,15 +78,24 @@ Un modelo se comporta de forma combinada cuando el sistema tiene oscilaciones "a
 Básicamente es una herramienta matemática utilizada para resolver ecuaciones diferenciales con condiciones iniciales. Es ampliamente aplicada en el análisis de sistemas dinámicos y circuitos eléctricos, ya que permite transformar ecuaciones diferenciales en ecuaciones algebraicas más sencillas de manejar. La transformada muestra componentes sinusoidales y exponenciales de la señal. Mediante la definición, es una integral impropia que va desde 0 hasta infinito como se evidencia en la siguiente ecuación:
 
 $$ f(t) \to F(S) $$
-$$ \mathcal{L}\{f(t)\} = F(s) = \int_0^{\infty} f(t) e^{-st} \, dt $
+$$ \mathcal{L}\{f(t)\} = F(s) = \int_0^{\infty} f(t) e^{-st} \, dt $$
 
 En la figura 2, se observa una representación un poco más gráfica:
 
 ![Figura 2](Imagenes/TL.png)
 
-Figura 2, TL
+Figura 2. TL
 
+A continuación, se evidencian algunas transformadas importantes a tener en cuenta:
+### 7.1. Transformada inversa de Laplace
+La transformada inversa de Laplace es cambiar una función del dominio de la frecuencia compleja al dominio del tiempo; se definde de la siguiente manera:
 
+$$ F(S) \to f(t) $$
+$$ \mathcal{L}^{-1}\{F(s)\} = f(t) = \frac{1}{2\pi i} \int_{\sigma - i\infty}^{\sigma + i\infty} F(s) e^{st} \, ds $$
+
+![Figura 3](Imagenes/TLinv.png)
+
+Figura 3. TL inversa
 ## 4. Ejemplos
 Si en algún caso pretende dar un ejemplo explicativo ya sea a través de texto o através de ecuaciones matemáticos, utilizar la palabra 'Ejemplo' seguido de una numeración consecutiva dentro de la clase. Utilice el emoji 💡 antecediendo la palabra.
 
