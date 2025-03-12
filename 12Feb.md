@@ -43,10 +43,31 @@ Al modelar sistemas, como se dijo anteriormente hay una entrada y una salida. Al
 
 $$ u(t) = a_1 \frac{d^2F}{dt^2} + a_2 \frac{dF}{dt} + a_3 F$$
 
-Donde: $a = Constantes del sistema$; $u = Entrada del sistema$; $F= Salida del sistema$
-Tdo esto a partir del concepto de derivada, que se basa en la pendiente y el cambio de la misma de determinada función.
-Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
+Donde: a = Constantes del sistema; u = Entrada del sistema; F= Salida del sistema
+### 3.2. Características de una ED
+Hay diferentes tipos de ED basadas en la linealidad y variabilidad en el tiempo. La linealidad de una ecuación diferencial se refiere a que es lineal en la función incógnita y sus derivadas y la variabilidad en el tiempo se basa al cómo varía el modelo cuando transcurre el tiempo.
+## 4. Clasificación de sistemas
+### 4.1. Sistema lineal
+>🔑 *Sistema lineal:* Se considera sistema lineal cuando satisface el principio de superposición (la respuesta a múltiples excitaciones simultáneas es igual a la suma de las respuestas individuales a cada excitación aplicada por separado) y satisface el principio de proporcionalidad (la relación entre la entrada y la salida es constante.
 
+### 4.2. Sistema no lineal
+>🔑 *Sistema no lineal:* Se considera sistema no lineal cuando no satisface el principio de superposición y tampoco satisface el principio de proporcionalidad. Su análisis es más complejo; es posible linealizarlos entorno a un punto de operación, lo que permite aplicar métodos de análisis en cierta región del sistema.
+## 5. Modelamiento y validación
+Al desarrollar un modelo matemático de un sistema a partir de leyes físicas, es importante considerar que siempre existirá un cierto grado de incertidumbre en los resultados obtenidos, debido a simplificaciones, suposiciones y posibles errores en los datos.
+
+Para garantizar que el modelo obtenido represente con precisión el comportamiento del sistema real, es fundamental realizar un proceso de validación. Esto implica **comparar** la salida del modelo con la del sistema físico y evaluar si la diferencia es aceptable. En caso contrario, el modelo debe ajustarse iterativamente hasta que el error se reduzca a un nivel adecuado.
+
+Además, la validación no solo permite mejorar la precisión del modelo, sino que también ayuda a identificar posibles limitaciones o factores no considerados.
+## 6. Influencia de parámetros
+Según los parámetros, hay diferentes comportamientos de un sistema:
+### 6.1. Comportamiento sinusoidal
+Un modelo se comporta sinusoidalmente cuando hay inexistencia de parámetros, por ejemplo, un péndulo ideal oscilando sin ningún tipo de fricción o resistencia al aire; se representaría mediante una amplitud y oscilación constante.
+### 6.2. Comportamiento de decaimiento exponencial
+Un modelo se comporta decayendo exponencialmente cuando existe el parámetro de disipación de energía. Un ejemplo muy común es un circuito eléctrico RC, donde la carga del capacitor disminuye con el tiempo de forma exponencial debido a la disipación de energía en la resistencia.
+### 6.3. Combinados
+Un modelo se comporta de forma combinada cuando el sistema tiene oscilaciones "amortiguadas", cuando el sistema tiene una resistencia o fricción que no es lo suficientemente grande como para detener las oscilaciones de inmediato, pero sí las reduce con el tiempo. Por ejemplo un péndulo oscilando en aceite. Su movimiento es inicialmente oscilatorio (sinusoidal), pero la fricción con el fluido provoca que la amplitud de las oscilaciones disminuya exponencialmente hasta detenerse.
+## 7. Transformada de Laplace
+La transformada de Laplace 
 ## 2. Definiciones
 Utilice el símbolo '>' para crear bloques de texto. En la presente plantilla estas cajas están reservadas para resaltar las definiciones, las cuales deben ser breves, y la palabra o frase que se está definiendo debe estar en letra itálica. El inicio del bloque de texto debe realizarse con el emoji 🔑 .
 >🔑 *Definición:* descripción precisa y clara del significado de una palabra, término, concepto o fenómeno. Es una explicación que establece los límites y el alcance de aquello que se está definiendo, aclarando su naturaleza, características esenciales y, en algunos casos, su relación con otros conceptos.
