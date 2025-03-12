@@ -37,14 +37,13 @@ $$\frac {df(t)}{dt}$$
 
 Tdo esto a partir del concepto de derivada, que se basa en la pendiente y el cambio de la misma de determinada función.
 ## 3. ED en sistemas dinámicos
-Las ecuaciones diferenciales modelan el comportamiento de un sistema en función del tiempo
-### 2.5. Modelo dinámico
->🔑 *Modelo dinámico:* Un modelo dinámico es una expresión matemática que predecirá el comportamiento de un sistema dinámico y/o variable a lo largo del tiempo.
+Las ecuaciones diferenciales son fundamentales para modelar sistemas porque describen cómo cambian las variables en función del tiempo u otra magnitud, permitiendo representar matemáticamente fenómenos dinámicos como el movimiento, la transferencia de calor, el crecimiento poblacional o el comportamiento de circuitos eléctricos.
+### 3.1. ¿Cómo luce un modelo de ED?
+Al modelar sistemas, como se dijo anteriormente hay una entrada y una salida. Al modelarlo en una ED lo que varía son las constantes y las derivadas de orden n que se encuentren presentes en la ED, tanto la entrada como la salida del sistema no son números, son funciones:
 
-Básicamente un modelo dinámico busca obtener una expresión matemática, en el caso de control, que relacione una variable de interés respecto al tiempo. Como se sabe, la derivada calcula una **variación**; en este caso de una variable respecto al tiempo:
+$$ u(t) = a_1 \frac{d^2F}{dt^2} + a_2 \frac{dF}{dt} + a_3 F$$
 
-$$\frac {df(t)}{dt}$$
-
+Donde: $a = Constantes del sistema$; $u = Entrada del sistema$; $F= Salida del sistema$
 Tdo esto a partir del concepto de derivada, que se basa en la pendiente y el cambio de la misma de determinada función.
 Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
 
