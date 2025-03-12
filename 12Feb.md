@@ -17,9 +17,22 @@ Figura 1. Sistema
 
 A partir de modelos matemáticos, se representa lo que ocurre en la variable de salida si se modifica la entrada del sistema. En la Figura 1 se representa de manera básica un sistema.
 ### 2.2. Sistema dinámico
->🔑 *Sistema dinámico:* La dinámica de un sistema se basa en variables que varían respecto al tiempo. En pocas palabras, es un sistema que cambia a través del tiempo. 
+>🔑 *Sistema dinámico:* Se le llama sistema dinámico al sistema donde la salida en el presente depende de una entrada del pasado.
 
-Básicamente, se le llama dinámico, si su salida en el *presente*
+A diferencia de un sistema estático, donde la salida solo depende de la entrada en curso. La dinámica de un sistema se basa en variables que varían respecto al tiempo. En pocas palabras, es un sistema que cambia a través del tiempo. 
+### 2.3. Planta
+>🔑 *Planta:* Es la parte física del sistema que se quiere controlar.
+
+Usualmente es confundida con el sistema, sin embargo solo se considera la parte física del mismo; la planta puede ser reprensentada matemáticamente, a través de uno o varios sistemas.
+### 2.4. Proceso
+>🔑 *Proceso:* Secuencia de pasos o instrucciones para lograr un objetivo.
+>
+El proceso es como la "receta" de lo que se hará; aunque en control se usa frecuentemente para referirse a la _planta_, no son lo mismo. El proceso está más ligado al concepto de algoritmo que de planta.
+### 2.5. Modelo dinámico
+>🔑 *Modelo dinámico:* Un modelo dinámico es una expresión matemática que predecirá el comportamiento de un sistema dinámico y/o variable a lo largo del tiempo.
+
+Básicamente un modelo dinámico busca obtener una expresión matemática, en el caso de control, que relacione una variable de interés respecto al tiempo. Como se sabe, la derivada calcula una **variación**; en este caso de una variable respecto al tiempo:
+$$\fraq {df(t)}{dt}$$
 ## 1. Subtítulos
 Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
 
