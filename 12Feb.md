@@ -34,7 +34,18 @@ El proceso es como la "receta" de lo que se hará; aunque en control se usa frec
 Básicamente un modelo dinámico busca obtener una expresión matemática, en el caso de control, que relacione una variable de interés respecto al tiempo. Como se sabe, la derivada calcula una **variación**; en este caso de una variable respecto al tiempo:
 
 $$\frac {df(t)}{dt}$$
-## 1. Subtítulos
+
+Tdo esto a partir del concepto de derivada, que se basa en la pendiente y el cambio de la misma de determinada función.
+## 3. ED en sistemas dinámicos
+Las ecuaciones diferenciales modelan el comportamiento de un sistema en función del tiempo
+### 2.5. Modelo dinámico
+>🔑 *Modelo dinámico:* Un modelo dinámico es una expresión matemática que predecirá el comportamiento de un sistema dinámico y/o variable a lo largo del tiempo.
+
+Básicamente un modelo dinámico busca obtener una expresión matemática, en el caso de control, que relacione una variable de interés respecto al tiempo. Como se sabe, la derivada calcula una **variación**; en este caso de una variable respecto al tiempo:
+
+$$\frac {df(t)}{dt}$$
+
+Tdo esto a partir del concepto de derivada, que se basa en la pendiente y el cambio de la misma de determinada función.
 Agregue todos los subtítulos que considere necesarios para estructurar el contenido de la clase. Es importante que considere jerarquías de los temas para definir el orden de estos subtítulos. Cada subtítulo debe ir numerado como una sección, de la manera en que lo presenta esta plantilla
 
 ## 2. Definiciones
