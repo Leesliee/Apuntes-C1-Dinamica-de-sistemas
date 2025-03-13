@@ -17,6 +17,13 @@ Se realizó el siguiente ejemplo en clase:
 💡Ejemplo: Determine en la función del tiempo F(s).
 
 $$F(s) = \frac{2s^2 + 6s + 5}{(s+2)(s+1)^2}$$
+
+$$F(s) = \frac{2s^2 + 6s + 5}{(s+2)(s+1)^2} = \frac{A}{(s+2)}+\frac{B}{(s+1)}+\frac{C}{(s+1)^2}$$
+
+$$\frac{(s+2)(s+1)^2(2s^2 + 6s + 5)}{(s+2)(s+1)^2} = \frac{(s+2)(s+1)^2A}{(s+2)}+\frac{(s+2)(s+1)^2B}{(s+1)}+\frac{(s+2)(s+1)^2C}{(s+1)^2}$$
+
+$$2s^2 + 6s + 5= (s+1)^2A + (s+2)(s+1)B +(s+2)C$$
+
 ### Caso 3: Raíces complejas conjugadas.
 En el último caso, es importante tener en cuenta la factorización. Para que este caso suceda, debe haber una expresión cuya solución no se pueda expresar con reales, sino, que se pasa al plano complejo. Para ello, se tiene en cuenta el discriminante de la ecuación cuadrática, donde:
 
