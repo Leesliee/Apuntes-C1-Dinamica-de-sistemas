@@ -51,5 +51,5 @@ Sin embargo, en la práctica, es relevante el uso de herramientas como MATLAB, q
 Además, es crucial reconocer qué tipo de caso se está abordando en una descomposición en fracciones parciales. Para ello, el valor del discriminante de una ecuación cuadrática juega un papel clave, ya que permite identificar rápidamente si las raíces son reales distintas, repetidas o complejas conjugadas, agilizando así el procedimiento.
 
 En conclusión, combinar el dominio del análisis manual con el uso de herramientas computacionales permite un enfoque más eficiente y preciso en la resolución de problemas en sistemas dinámicos.
-## 11. Referencias
+## 6. Referencias
 Agregue un subtítulo al final donde pueda p
