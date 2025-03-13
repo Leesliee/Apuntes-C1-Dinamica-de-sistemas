@@ -49,7 +49,7 @@ Se reemplaza:
 
 $$F(s) =\frac{1}{(s+2)}+\frac{1}{(s+1)}+\frac{1}{(s+1)^2}$$
 
-$$\mathcal{L}^{-1} \{ F(s) \} = \mathcal{L}^{-1} \left( \frac{1}{s + 2} \right) + \mathcal{L}^{-1} \left( \frac{1}{s +1} \right+ \mathcal{L}^{-1} \left( \frac{1}{(s+1)^2} \right)$$
+$$\mathcal{L}^{-1} \{ F(s) \} = \mathcal{L}^{-1} \left( \frac{1}{s + 2} \right) + \mathcal{L}^{-1} \left( \frac{1}{s +1} \right) + \mathcal{L}^{-1} \left( \frac{1}{(s+1)^2} \right)$$
 
 Y por último se encuentra la solución en el dominio del tiempo: 
 
