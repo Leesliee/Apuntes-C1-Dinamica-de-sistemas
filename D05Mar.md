@@ -40,6 +40,7 @@ Se aplica la transformada inversa de Laplace:
 $$
 \mathcal{L}^{-1} { F(s) } = \mathcal{L}^{-1} \left( \frac{1}{s+2} \right) + \mathcal{L}^{-1} \left( \frac{1}{s-2} \right)+ \mathcal{L}^{-1} \left( \frac{-3s}{s^2 + 6s + 10} \right) + \mathcal{L}^{-1} \left( \frac{3s - 3}{s^2 + 8s + 17} \right) 
 $$
+
 Volviendo al dominio del tiempo:
 
 $$
