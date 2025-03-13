@@ -90,4 +90,5 @@ Además, es crucial reconocer qué tipo de caso se está abordando en una descom
 
 En conclusión, combinar el dominio del análisis manual con el uso de herramientas computacionales permite un enfoque más eficiente y preciso en la resolución de problemas en sistemas dinámicos.
 ## 6. Referencias
-Agregue un subtítulo al final donde pueda p
+(N.d.-c). Retrieved March 13, 2025, from http://chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/http://canek.uam.mx/Ecuaciones/Teoria/6.Laplace/ImpSolucionEdos.pdf
+
