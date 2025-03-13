@@ -199,6 +199,8 @@ Estos conceptos constituyen la base para comprender y desarrollar estrategias de
 
 ## 11. Referencias
 (S/f). Unir.net. Recuperado el 11 de marzo de 2025, de https://www.unir.net/revista/ingenieria/sistemas-dinamicos-matematicas/
+
 Universidad de Guanajuato. (2022, January 19). Clase digital 5. La transformada de Laplace. Recursos Educativos Abiertos; Sistema Universitario de Multimodalidad Educativo (SUME) - Universidad de Guanajuato. https://blogs.ugto.mx/rea/clase-digital-5-la-transformada-de-laplace/
+
 Jorge Eduardo Cote Ballesteros. (2024). Transformada de Laplace, dinámica de sistemas. ETITC
 
