@@ -78,11 +78,18 @@ $$F(s) = \frac{s^2 + 2s + 3}{(s^2+2s+2)(s^2+2s+5)}$$
 ### 📚 Ejercicio 1
 Determinar la función en el dominio del tiempo de F(s):
 
-
-
 ### 📚 Ejercicio 2
 ## 4. Aplicaciones TL en MATLAB
+En MATLAB se puede automatizar el proceso analítico de muchas funciones, por ejemplo la transformada de Laplace, a continuación se evidencia de manera breve la manera de usar matlab y la función a emplear.
 ### 4.1. Transformada de Laplace
+Para obtener la transformada de Laplace en función de la frecuencia compleja se usa el siguiente fragmento de código:
+```
+syms t s #Función para declarar variables simbólicas
+y = *funcion*
+Y = laplace(y) #Función para obtener la TL de la función y
+Y = *función en el dominio s*
+}
+```
 ### 4.2. Transformada inversa de Laplace
 ### 4.3. Función residue
 ## 5. Conclusiones
