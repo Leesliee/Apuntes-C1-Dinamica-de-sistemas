@@ -82,7 +82,7 @@ $$F(s) = \frac{s^2 + 2s + 8}{(s^4+4s^2)}$$
 
 $$F(s) = \frac{s^2 + 2s + 8}{(s^2)(s^2+4)} = \frac{A}{(s)}+\frac{B}{(s^2)}+\frac{Cs+D}{(s^2+1)^2}$$
 
-$$\frac{(s^2)(s^2+4)(s^2 + 2s + 8)}{(s^2)(s^2+4)} = \frac{(s^2)(s^2+4)A}{(s)}+\frac{(s^2)(s^2+4)B}{(s^2)}+\frac{Cs+D}{(s^2+1)^2}$$$$
+$$\frac{(s^2)(s^2+4)(s^2 + 2s + 8)}{(s^2)(s^2+4)} = \frac{(s^2)(s^2+4)A}{(s)}+\frac{(s^2)(s^2+4)B}{(s^2)}+\frac{Cs+D}{(s^2+1)^2}$$
 
 $$s^2 + 2s + 8= (s)(s^2+4)A + (s^2+4)B +(s^2)(Cs+D)$$
 
@@ -91,7 +91,7 @@ Al evaluar s = 0:
 $$(0)^2 + 2(0) + 8= (0)((0)^2+4)A + ((0)^2+4)B +((0)^2)(Cs+D)$$
 $$ 8 = (0)A + (4)B +(0)C $$
 $$ B =  \frac{8}{4} $$
-$$ B = 8 $$
+$$ B = 2 $$
 
 Al evaluar s = 2i:
 
@@ -100,12 +100,12 @@ $$ 4+4i = (0)A + (0)B - 4D - 8iC $$
 
 Parte real con parte real y parte imaginaria con parte imaginaria:
 
-\[
+$$\[
 \begin{cases}
   -8C = 4 \\
   -4D = 4
 \end{cases}
-\]
+\]$$
 
 $$ C = \frac{-1}{2}$$
 $$ D = -1 $$
