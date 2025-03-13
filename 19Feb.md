@@ -1,4 +1,4 @@
-# Transformada inversa de laplace: Fracciones parciales + Matlab
+# Transformada inversa de laplace: Fracciones parciales + MATLAB
 
 ## 1. Introducción
 En la sesión del 19 de febrero, se profuncizó en la descomposición en fracciones parciales, abordando los últimos dos casos de fracciones parciales: Raíces reales repetidas y raíces complejas conjugadas. Para cada caso, se desarrolló un ejemplo práctico con su respectiva solución paso a paso. Además, se incorporó el uso de MATLABcomo herramienta para facilitar el análisis de sistemas mediante la Transformada de Laplace y su inversa. También se aprendió a emplear la función residue, que permite descomponer automáticamente expresiones en fracciones parciales, optimizando el tiempo y reduciendo posibles errores en los cálculos manuales.
@@ -16,122 +16,40 @@ Se realizó el siguiente ejemplo en clase:
 
 💡Ejemplo: Determine en la función del tiempo F(s).
 
-$$G(s) = \frac{2s^2 + 6s + 5}{(s+2)(s+1)^2}$$
+$$F(s) = \frac{2s^2 + 6s + 5}{(s+2)(s+1)^2}$$
 ### Caso 3: Raíces complejas conjugadas.
 En el último caso, es importante tener en cuenta la factorización. Para que este caso suceda, debe haber una expresión cuya solución no se pueda expresar con reales, sino, que se pasa al plano complejo. Para ello, se tiene en cuenta el discriminante de la ecuación cuadrática, donde:
 
 $$d > 0 \to $$ Raíces reales y diferentes
 
-$$d > 0 \to $$ Raíces reales e iguales
-Sin embargo:
+$$d \geq 0 \to $$ Raíces reales e iguales
 
 $$d < 0 \to $$ Raíces complejas conjugadas
 
-### 2.3. Planta
->🔑 *Planta:* Es la parte física del sistema que se quiere controlar.
+En este caso, si el discriminante es menor que 0, se aplica este caso: 
 
-Usualmente es confundida con el sistema, sin embargo solo se considera la parte física del mismo; la planta puede ser reprensentada matemáticamente, a través de uno o varios sistemas.
-### 2.4. Proceso
->🔑 *Proceso:* Secuencia de pasos o instrucciones para lograr un objetivo.
->
-El proceso es como la "receta" de lo que se hará; aunque en control se usa frecuentemente para referirse a la _planta_, no son lo mismo. El proceso está más ligado al concepto de algoritmo que de planta.
-### 2.5. Modelo dinámico
->🔑 *Modelo dinámico:* Un modelo dinámico es una expresión matemática que predecirá el comportamiento de un sistema dinámico y/o variable a lo largo del tiempo.
+$$F(s) = \frac{P(s)}{Q(s)} = \frac{P(S)}{(s^2 + b_1s + c_1)(s^2 + b_2s + c_2) \dots (s^2 + b_n s + c_n)}$$
 
-Básicamente un modelo dinámico busca obtener una expresión matemática, en el caso de control, que relacione una variable de interés respecto al tiempo. Como se sabe, la derivada calcula una **variación**; en este caso de una variable respecto al tiempo:
+$$F(s) = \frac{As + B}{(s^2 + b_1s + c_1)} + \frac{Cs + D}{(s^2 + b_2s + c_2)} + \dots + \frac{Ms + N}{(s^2 + b_n s + c_n)}$$
 
-$$\frac {df(t)}{dt}$$
+💡Ejemplo: Determine en la función del tiempo F(s).
 
-Tdo esto a partir del concepto de derivada, que se basa en la pendiente y el cambio de la misma de determinada función.
-## 3. ED en sistemas dinámicos
-Las ecuaciones diferenciales son fundamentales para modelar sistemas porque describen cómo cambian las variables en función del tiempo u otra magnitud, permitiendo representar matemáticamente fenómenos dinámicos como el movimiento, la transferencia de calor, el crecimiento poblacional o el comportamiento de circuitos eléctricos.
-### 3.1. ¿Cómo luce un modelo de ED?
-Al modelar sistemas, como se dijo anteriormente hay una entrada y una salida. Al modelarlo en una ED lo que varía son las constantes y las derivadas de orden n que se encuentren presentes en la ED, tanto la entrada como la salida del sistema no son números, son funciones:
+$$F(s) = \frac{s^2 + 2s + 3}{(s^2+2s+2)(s^2+2s+5)}$$
 
-$$ u(t) = a_1 \frac{d^2F}{dt^2} + a_2 \frac{dF}{dt} + a_3 F$$
-
-Donde: a = Constantes del sistema; u = Entrada del sistema; F= Salida del sistema
-### 3.2. Características de una ED
-Hay diferentes tipos de ED basadas en la linealidad y variabilidad en el tiempo. La linealidad de una ecuación diferencial se refiere a que es lineal en la función incógnita y sus derivadas y la variabilidad en el tiempo se basa al cómo varía el modelo cuando transcurre el tiempo.
-## 4. Clasificación de sistemas
-### 4.1. Sistema lineal
->🔑 *Sistema lineal:* Se considera sistema lineal cuando satisface el principio de superposición (la respuesta a múltiples excitaciones simultáneas es igual a la suma de las respuestas individuales a cada excitación aplicada por separado) y satisface el principio de proporcionalidad (la relación entre la entrada y la salida es constante.
-
-### 4.2. Sistema no lineal
->🔑 *Sistema no lineal:* Se considera sistema no lineal cuando no satisface el principio de superposición y tampoco satisface el principio de proporcionalidad. Su análisis es más complejo; es posible linealizarlos entorno a un punto de operación, lo que permite aplicar métodos de análisis en cierta región del sistema.
-## 5. Modelamiento y validación
-Al desarrollar un modelo matemático de un sistema a partir de leyes físicas, es importante considerar que siempre existirá un cierto grado de incertidumbre en los resultados obtenidos, debido a simplificaciones, suposiciones y posibles errores en los datos.
-
-Para garantizar que el modelo obtenido represente con precisión el comportamiento del sistema real, es fundamental realizar un proceso de validación. Esto implica **comparar** la salida del modelo con la del sistema físico y evaluar si la diferencia es aceptable. En caso contrario, el modelo debe ajustarse iterativamente hasta que el error se reduzca a un nivel adecuado.
-
-Además, la validación no solo permite mejorar la precisión del modelo, sino que también ayuda a identificar posibles limitaciones o factores no considerados.
-## 6. Influencia de parámetros
-Según los parámetros, hay diferentes comportamientos de un sistema:
-### 6.1. Comportamiento sinusoidal
-Un modelo se comporta sinusoidalmente cuando hay inexistencia de parámetros.
-
-💡Ejemplo: Un péndulo ideal oscilando sin ningún tipo de fricción o resistencia al aire; se representaría mediante una amplitud y oscilación constante.
-### 6.2. Comportamiento de decaimiento exponencial
-Un modelo se comporta decayendo exponencialmente cuando existe el parámetro de disipación de energía. 
-
-💡Ejemplo: Circuito eléctrico RC, donde la carga del capacitor disminuye con el tiempo de forma exponencial debido a la disipación de energía en la resistencia.
-### 6.3. Combinados
-Un modelo se comporta de forma combinada cuando el sistema tiene oscilaciones "amortiguadas", cuando el sistema tiene una resistencia o fricción que no es lo suficientemente grande como para detener las oscilaciones de inmediato, pero sí las reduce con el tiempo. 
-
-💡Ejemplo: un péndulo oscilando en aceite. Su movimiento es inicialmente oscilatorio (sinusoidal), pero la fricción con el fluido provoca que la amplitud de las oscilaciones disminuya exponencialmente hasta detenerse.
-## 7. Transformada de Laplace
->*Transformada de Laplace:* Es una transformada que convierte una función de una variable real en el dominio del tiempo a una función de variable compleja en el dominio de la frecuencia (s). 
-
-Básicamente es una herramienta matemática utilizada para resolver ecuaciones diferenciales con condiciones iniciales. Es ampliamente aplicada en el análisis de sistemas dinámicos y circuitos eléctricos, ya que permite transformar ecuaciones diferenciales en ecuaciones algebraicas más sencillas de manejar. La transformada muestra componentes sinusoidales y exponenciales de la señal. Mediante la definición, es una integral impropia que va desde 0 hasta infinito como se evidencia en la siguiente ecuación:
-
-$$ f(t) \to F(S) $$
-$$ \mathcal{L}\{f(t)\} = F(s) = \int_0^{\infty} f(t) e^{-st} \, dt $$
-
-En la figura 2, se observa una representación un poco más gráfica:
-
-![Figura 2](Imagenes/TL.png)
-
-Figura 2. TL
-
-Entre las propiedades de la TL, se puede ver la linealidad, una propiedad que se usa todo el tiempo.
-A continuación, se evidencian algunas transformadas importantes a tener en cuenta:
-### 7.1. Transformada inversa de Laplace
-La transformada inversa de Laplace es cambiar una función del dominio de la frecuencia compleja al dominio del tiempo; se definde de la siguiente manera:
-
-$$ F(S) \to f(t) $$
-$$ \mathcal{L}^{-1}\{F(s)\} = f(t) = \frac{1}{2\pi i} \int_{\sigma - i\infty}^{\sigma + i\infty} F(s) e^{st} \, ds $$
-
-![Figura 3](Imagenes/TLinv.png)
-
-Figura 3. TL inversa
-### 7.2. Transformadas esenciales 
-#### 7.2.1 Transformada de una función
-$$ \mathcal{L}\ {f(t)\} = F(S)$$
-#### 7.2.2 Transformada de la derivada
-$$\mathcal{L} \{ f^{n}(t) \} = s^n F(s) - s^{n-1} f(0) - \cdots - s f^{n-1}(0) - f^n(0)$$
-#### 7.2.3 Transformada de la integral
-\mathcal{L} \left\{ \int f(t) \, dt \right\} = \frac{1}{s} F(s)
-
-# 8. TL Inversa: Fracciones parciales
-Para solucionar una ED, se hace uso de la TL, sin embargo en función la la frecuencia compleja no tiene alguna empleabilidad, por ende se debe volver al dominio del tiempo para hallar la solución de la ED. Mediante la definición se pueden determinar las transformadas y sus inversas; sin embargo, existe una "Tabla de transformadas", la cual será fundamental para llegar nuevamente al dominio del tiempo. Por ahora se verá un repaso de fracciones parciales; pues es fundamental llegar a la expresión más "reducida"  y leer la tabla de transformadas mucho más sencillo. En esta sesión se recordó el primer caso: raíces reales y diferentes.
-## Caso 1: Raíces reales y diferentes
-En el denominador de F(S), hay diferentes factores lineales que no se repiten. La intención es separar cada fracción con un numerador A, B, C,..., n:
-
-$$F(S) = \frac{P(s)}{Q(s)} = \frac{P(S)}{(s + p_1)(s + p_2) \dotsm (s + p_n)}$$
-
-$$F(S) = \frac{A}{(s + p_1)} + \frac{B}{(s + p_2)} + \dots + \frac{N}{(s + p_n)}$$
-
-💡Ejemplo:
-
-## 9. Ejercicios
+## 3. Ejercicios
 ### 📚 Ejercicio 1
 ### 📚 Ejercicio 2
-## 10. Conclusiones
-En esta sesión, se exploraron conceptos fundamentales para el estudio y análisis de sistemas dinámicos. Se comprendió qué es un sistema y cómo se diferencia un sistema dinámico de uno estático, destacando la importancia del su variabilidad en el timpo. También se analizó la distinción entre una planta y un proceso, que a pesar que en control sean considerados sinónimos, no lo son.
+## 4. Aplicaciones TL en MATLAB
+### 4.1. Transformada de Laplace
+### 4.2. Transformada inversa de Laplace
+### 4.3. Función residue
+## 5. Conclusiones
+El estudio de la descomposición en fracciones parciales y la Transformada de Laplace es fundamental en el análisis de sistemas dinámicos. Comprender estos métodos de manera manual también permite desarrollar un análisis más profundo sobre el comportamiento de los sistemas.
 
-Adicionalmente, se identificó el papel fundamental de las ecuaciones diferenciales en el modelado de sistemas, que permiten describir su comportamiento matemáticamente. Finalmente, se hizo la introducción a la Transformada de Laplace como una herramienta para resolver ecuaciones diferenciales
+Sin embargo, en la práctica, es relevante el uso de herramientas como MATLAB, que no solo optimizan el tiempo de cálculo, sino que también permiten verificar si los resultados obtenidos manualmente son correctos. Funciones como residue y la implementación de la Transformada e Inversa de Laplace facilitan el análisis y diseño de sistemas.
 
-Estos conceptos constituyen la base para comprender y desarrollar estrategias de control y análisis.
+Además, es crucial reconocer qué tipo de caso se está abordando en una descomposición en fracciones parciales. Para ello, el valor del discriminante de una ecuación cuadrática juega un papel clave, ya que permite identificar rápidamente si las raíces son reales distintas, repetidas o complejas conjugadas, agilizando así el procedimiento.
 
+En conclusión, combinar el dominio del análisis manual con el uso de herramientas computacionales permite un enfoque más eficiente y preciso en la resolución de problemas en sistemas dinámicos.
 ## 11. Referencias
 Agregue un subtítulo al final donde pueda p
