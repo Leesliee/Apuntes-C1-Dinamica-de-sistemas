@@ -1,10 +1,10 @@
 # Transformada inversa de laplace: Fracciones parciales + Matlab
 
 ## 1. Introducción
+En la sesión del 19 de febrero, se profuncizó en la descomposición en fracciones parciales, abordando los últimos dos casos de fracciones parciales: Raíces reales repetidas y raíces complejas conjugadas. Para cada caso, se desarrolló un ejemplo práctico con su respectiva solución paso a paso. Además, se incorporó el uso de MATLABcomo herramienta para facilitar el análisis de sistemas mediante la Transformada de Laplace y su inversa. También se aprendió a emplear la función residue, que permite descomponer automáticamente expresiones en fracciones parciales, optimizando el tiempo y reduciendo posibles errores en los cálculos manuales.
 
-
-## 2. Conceptos base
-A continuación, se evidencian los principios fundamentales a tener en cuenta durante el transcurso de la materia.
+## 2. Fracciones parciales
+En la clase del 12 de febrero, se evidenció el caso 1: *Raíces reales y diferentes*, a continuación se presentan los dos casos restantes:
 
 ### 2.1. Sistema
 >🔑 *Sistema:* Un sistema es una combinación de componentes que interactúan entre sí con el propósito de alcanzar un objetivo específico. Esta interacción puede representarse mediante reglas o relaciones matemáticas que establecen cómo las entradas del sistema afectan sus salidas.
