@@ -12,39 +12,7 @@ F(s) = \frac{2s - 3}{(s+2)(s-2)(s^2 + 6s + 10)(s^2 + 8s + 17)}
 $$
 
 $$
-F(s) = \frac{A}{s+2} + \frac{B}{s-2} + \frac{Cs + D}{s^2 + 6s + 10} + \frac{Es + F}{s^2 + 8s + 17}
-$$
-
-$$
-2s - 3 = A(s-2)(s^2+6s+10)(s^2+8s+17) + B(s+2)(s^2+6s+10)(s^2+8s+17)+ (Cs+D)(s+2)(s-2)(s^2+8s+17) + (Es+F)(s+2)(s-2)(s^2+6s+10)
-$$
-
-
-$$
-\begin{cases}
-    A + B = 2 \\
-    6A + 6B + C + E = 0 \\
-    10A + 10B + 6C + 8E = 0 \\
-    D + F = -3
-\end{cases}
-$$
-
-Resolviendo el sistema, obtenemos:
-
-$$
-A = 1, \quad B = 1, \quad C = -3, \quad D = 0, \quad E = 3, \quad F = -3
-$$
-
-Se aplica la transformada inversa de Laplace:
-
-$$
-\mathcal{L}^{-1} { F(s) } = \mathcal{L}^{-1} \left( \frac{1}{s+2} \right) + \mathcal{L}^{-1} \left( \frac{1}{s-2} \right)+ \mathcal{L}^{-1} \left( \frac{-3s}{s^2 + 6s + 10} \right) + \mathcal{L}^{-1} \left( \frac{3s - 3}{s^2 + 8s + 17} \right) 
-$$
-
-Volviendo al dominio del tiempo:
-
-$$
-f(t) = e^{-2t} + e^{2t} - 3 e^{-3t} \cos (t) + 3 e^{-4t} \cos (t) - 3 e^{-4t} \sin (t)
+f(t) = \frac{-1}{3978}-\frac{92}{225}e^{-2t} +\frac{7}{30} te^{-2t} + \mathcal{L}^{-1} \left( \frac{4/17 s +39/34}{(s^2+6s+10)} \right)+ \mathcal{L}^{-1} \left( \frac{113/650 s +393/650}{(s^2+8s+17)} \right)
 $$
 
 ## 3. Ejercicios
