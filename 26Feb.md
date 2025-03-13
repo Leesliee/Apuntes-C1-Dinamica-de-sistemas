@@ -57,11 +57,17 @@ Es imprescindible el conocimiento de las condiciones iniciales de la ecuación. 
 ##### B. Transformada de la derivada
 Se hace uso de la transformada de la derivada, se reemplaza en las derivadas y se opera con los distintos factores de la ED que se quiere solucionar. A continuación se evidencia la transformada de la derivada:
 
-$$\mathcal{L} \left\{ \frac{df}{dt} \right\} = sF(s) - f(0)$$
+$$
+\mathcal{L} \{ \frac{df}{dt} \} = sF(s) - f(0)
+$$
 
-$$\mathcal{L} \left\{ \frac{d^2 f}{dt^2} \right\} = s^2 F(s) - s f(0) - f'(0)$$
+$$
+\mathcal{L} \{ \frac{d^2 f}{dt^2} \} = s^2 F(s) - s f(0) - f'(0)
+$$
 
-$$\mathcal{L} \left\{ \frac{d^n f}{dt^n} \right\} = s^n F(s) - s^{n-1} f(0) - s^{n-2} f'(0) - \dots - s f^{(n-2)}(0) - f^{(n-1)}(0)$$
+$$
+\mathcal{L} \{ \frac{d^n f}{dt^n} \} = s^n F(s) - s^{n-1} f(0) - s^{n-2} f'(0) - \dots - s f^{(n-2)}(0) - f^{(n-1)}(0)
+$$
 ##### C. Linealidad
 Se debe aplicar la transformada de Laplace a todos los términos, gracias al concepto de linealidad. Con ayuda de la transformada de la derivada, se aplica TL a todos los términos.
 ##### D. Despeje de la función de salida
