@@ -1,4 +1,4 @@
-# Optimización casos en fracciones parciales + Solución de ED en MATLAB
+# Optimización casos en fracciones parciales + Solución de ED, MATLAB
 
 ## 1. Introducción
 En la sesión del 26 de febrero, se exploraron métodos más eficientes para determinar los coeficientes en la descomposición en fracciones parciales, facilitando el análisis de sistemas en los tres casos fundamentales: Raíces reales y diferentes, raíces reales e iguales yraíces complejas conjugadas.
