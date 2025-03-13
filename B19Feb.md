@@ -24,6 +24,37 @@ $$\frac{(s+2)(s+1)^2(2s^2 + 6s + 5)}{(s+2)(s+1)^2} = \frac{(s+2)(s+1)^2A}{(s+2)}
 
 $$2s^2 + 6s + 5= (s+1)^2A + (s+2)(s+1)B +(s+2)C$$
 
+Al evaluar s = -2:
+
+$$ 2(-2)^2 + 6(-2) + 5= ((-2)+1)^2A + ((-2)+2)((-2)+1)B +((-2)+2)C $$
+$$ 1 = (1)A + (0)B +(0)C $$
+$$ A =  \frac{1}{1} $$
+$$ A = 1 $$
+
+Al evaluar s = -1:
+
+$$ 2(-1)^2 + 6(-1) + 5= ((-1)+1)^2A + ((-1)+2)((-1)+1)B +((-1)+2)C $$
+$$ 1 = (0)A + (0)B +(1)C $$
+$$ C =  \frac{1}{1} $$
+$$ C = 1 $$
+
+Sabiendo que A = 1 y C = 1, si s=0:
+
+$$ 2(0)^2 + 6(0) + 5= ((0)+1)^2(1) + ((0)+2)(0+1)(1) +((0)+2)C $$
+$$ 5 = 1 + 2 + 2C $$
+$$ C =  \frac{5-2-1}{2} $$
+$$ C = 1 $$
+
+Se reemplaza:
+
+$$F(s) =\frac{1}{(s+2)}+\frac{1}{(s+1)}+\frac{1}{(s+1)^2}$$
+
+$$\mathcal{L}^{-1} \{ F(s) \} = \mathcal{L}^{-1} \left( \frac{1}{s + 2} \right) + \mathcal{L}^{-1} \left( \frac{1}{s +1} \right+ \mathcal{L}^{-1} \left( \frac{1}{(s+1)^2} \right)$$
+
+Y por último se encuentra la solución en el dominio del tiempo: 
+
+$$f(t) = e^{-2t} + e^{-t} + te^{-t}$$
+
 ### Caso 3: Raíces complejas conjugadas.
 En el último caso, es importante tener en cuenta la factorización. Para que este caso suceda, debe haber una expresión cuya solución no se pueda expresar con reales, sino, que se pasa al plano complejo. Para ello, se tiene en cuenta el discriminante de la ecuación cuadrática, donde:
 
