@@ -183,7 +183,7 @@ Se reemplaza:
 
 $$F(S) = \frac{4}{(s-2)} + \frac{-2}{(s-3)} $$
 
-$$\mathcal{L}^{-1} \{ F(s) \} = \mathcal{L}^{-1} \left( \frac{4}{(s-2)} \right) + \mathcal{L}^{-1} \left(  \frac{-2}{(s-3) \right)$$
+$$\mathcal{L}^{-1} \{ F(s) \} = \mathcal{L}^{-1} \left( \frac{4}{s-2} \right) + \mathcal{L}^{-1} \left( \frac{-2}{s-3} \right)$$
 
 $$\mathcal{L}^{-1} \{ F(s) \} = 4* \mathcal{L}^{-1} \left( \frac{1}{s - 2} \right) + -2*\mathcal{L}^{-1} \left( \frac{1}{s - 3} \right)$$
 
