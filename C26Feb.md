@@ -52,5 +52,6 @@ Asimismo, se comprendió la importancia de la Transformada de la Derivada y su p
 Finalmente, se resaltó que existen múltiples formas de analizar el comportamiento de un sistema, tanto de manera analítica como numérica. En este contexto, MATLAB se convierte en una herramienta invaluable, facilitando la comparación entre métodos y permitiendo verificar soluciones de manera rápida y precisa.
 
 ## 7. Referencias
-T. De Laplace. (n.d.). MateFacil. Retrieved March 13, 2025, from https://matefacil.net/t-de-laplace/
+(N.d.-d). Retrieved March 13, 2025, from http://chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://blogs.ugto.mx/wp-content/uploads/sites/71/2022/01/Sesion-19.-ED.pdf
 
+Jorge Eduardo Cote Ballesteros (2024). Soluciones de ecuaciones diferenciales; dinámica de sistemas. ETITC
