@@ -82,16 +82,30 @@ Determinar la función en el dominio del tiempo de F(s):
 ## 4. Aplicaciones TL en MATLAB
 En MATLAB se puede automatizar el proceso analítico de muchas funciones, por ejemplo la transformada de Laplace, a continuación se evidencia de manera breve la manera de usar matlab y la función a emplear.
 ### 4.1. Transformada de Laplace
-Para obtener la transformada de Laplace en función de la frecuencia compleja se usa el siguiente fragmento de código:
+Para obtener la transformada de Laplace en función de la frecuencia compleja se puede usar de guía el siguiente fragmento de código:
 ```
-syms t s #Función para declarar variables simbólicas
-y = *funcion*
-Y = laplace(y) #Función para obtener la TL de la función y
+syms t s            %Función para declarar variables simbólicas
+y = *funcion dom t*
+Y = laplace(y)      %Función para obtener la TL de la función y
 Y = *función en el dominio s*
 }
 ```
 ### 4.2. Transformada inversa de Laplace
+Para obtener la función nuevamente en el dominio del tiempo viniendo de la frecuencia compleja se puede usar como guía el siguiente fragmento:
+```
+syms t s           %Función para declarar variables simbólicas
+Y = *funcion dom S*
+y = ilaplace(y)     %Función para obtener la TL inversa de la función y
+y = *función en el dominio t*
+}
+```
 ### 4.3. Función residue
+Para obtener las fracciones parciales en MATLAB, se usa la función residue; cuando se conocen los valores del numerador y del denominador. Se puede ver en el siguiente código:
+```
+numerador = [*numeradores*]                %Función para declarar variables simbólicas
+denominador = conv(funcion)[coeficientes den 1],[coeficientes den 2]   %Conv: función que retorna valores de un vector 
+[r,p,k]=residue(numerador, denominador)     %Se emplea la función residue
+```
 ## 5. Conclusiones
 El estudio de la descomposición en fracciones parciales y la Transformada de Laplace es fundamental en el análisis de sistemas dinámicos. Comprender estos métodos de manera manual también permite desarrollar un análisis más profundo sobre el comportamiento de los sistemas.
 
