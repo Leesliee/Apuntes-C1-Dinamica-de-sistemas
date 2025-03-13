@@ -118,6 +118,36 @@ $$F(S) = \frac{A}{(s + p_1)} + \frac{B}{(s + p_2)} + \dots + \frac{N}{(s + p_n)}
 
 ## 9. Ejercicios
 ### 📚 Ejercicio 1
+Halle la transformada inversa de la función F(S):
+
+$$F(S) = \frac{3s-7}{(s-1)(s-3)}$$
+
+$$F(S) = \frac{3s-7}{(s-1)(s-3)} = \frac{A}{(s-1)} + \frac{B}{(s-3)} $$
+
+$$ \frac{(s-1)(s-3)(3s-7)}{(s-1)(s-3)} \frac{(s-1)(s-3)A}{(s-1)} + \frac{(s-1)(s-3)B}{(s-3)} $$
+
+$$ 3s-7 = (s-3)A + (s-1)B $$
+
+Al evaluar s = 1:
+
+$$ 3(1)-7 = (1-3)A + (1-1)B $$
+$$ -4 = (-2)A + (0)B $$
+$$ A =  \frac{-4}{(-2} $$
+$$ A = 2 $$
+
+Al evaluar s = 3:
+
+$$ 3(3)-7 = (3-3)A + (3-1)B $$
+$$ 2 = 0A + 2B $$
+$$ B =  \frac{2}{(2} $$
+$$ B = 1 $$
+
+Se reemplaza:
+
+$$F(S) = \frac{2}{(s-1)} + \frac{1}{(s-3)} $$
+
+$$\mathcal{L}^{-1} \{ F(s) \} = \mathcal{L}^{-1} \left( \frac{2}{s - 1} \right) + \mathcal{L}^{-1} \left( \frac{1}{s - 3} \right)$$
+
 ### 📚 Ejercicio 2
 ## 10. Conclusiones
 En esta sesión, se exploraron conceptos fundamentales para el estudio y análisis de sistemas dinámicos. Se comprendió qué es un sistema y cómo se diferencia un sistema dinámico de uno estático, destacando la importancia del su variabilidad en el timpo. También se analizó la distinción entre una planta y un proceso, que a pesar que en control sean considerados sinónimos, no lo son.
