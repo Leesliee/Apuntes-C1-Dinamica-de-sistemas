@@ -7,8 +7,6 @@ F(s) que facilitó la aplicación de la Transformada Inversa de Laplace, permiti
 ## 2. Ejercicio con los 3 casos de fracciones parciales
 💡Ejemplo: Determine la transformada inversa de la función:
 
-$$F(S) = \frac{2s - 3}{(s+2)(s-2)(s^2 + 6s + 10)(s^2 + 8s + 17)}$$
-
 $$
 F(s) = \frac{2s - 3}{(s+2)(s-2)(s^2 + 6s + 10)(s^2 + 8s + 17)}
 $$
@@ -25,10 +23,14 @@ $$
 + (Cs+D)(s+2)(s-2)(s^2 + 8s + 17) + (Es+F)(s+2)(s-2)(s^2 + 6s + 10)
 $$
 
+Sistema de ecuaciones resultante al igualar coeficientes:
+
 $$
 \begin{cases}
     A + B = 2 \\
-    \text{(Ecuaciones adicionales)}
+    6A + 6B + C + E = 0 \\
+    10A + 10B + 6C + 8E = 0 \\
+    D + F = -3
 \end{cases}
 $$
 
@@ -42,7 +44,7 @@ $$
 
 $$
 f(t) = A e^{-2t} + B e^{2t} + e^{-3t} \left( C \cos t + D \sin t \right) + e^{-4t} \left( E \cos t + F \sin t \right)
-$$ 
+$$
 
 ## 3. Ejercicios
 ### 📚 Ejercicio 1
