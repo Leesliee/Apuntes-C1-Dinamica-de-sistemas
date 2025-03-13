@@ -103,7 +103,7 @@ $$ \mathcal{L}\ {f(t)\} = F(S)$$
 #### 7.2.2 Transformada de la derivada
 $$\mathcal{L} \{ f^{n}(t) \} = s^n F(s) - s^{n-1} f(0) - \cdots - s f^{n-1}(0) - f^n(0)$$
 #### 7.2.3 Transformada de la integral
-$$\mathcal{L} \left\{ \int f(t) \, dt \right\} = \frac{1}{s} F(s)$$
+$$\mathcal{L} \left( \int f(t) \, dt \right) = \frac{1}{s} F(s)$$
 
 ## 8. TL Inversa: Fracciones parciales
 Para solucionar una ED, se hace uso de la TL, sin embargo en función la la frecuencia compleja no tiene alguna empleabilidad, por ende se debe volver al dominio del tiempo para hallar la solución de la ED. Mediante la definición se pueden determinar las transformadas y sus inversas; sin embargo, existe una "Tabla de transformadas", la cual será fundamental para llegar nuevamente al dominio del tiempo. Por ahora se verá un repaso de fracciones parciales; pues es fundamental llegar a la expresión más "reducida"  y leer la tabla de transformadas mucho más sencillo. En esta sesión se recordó el primer caso: raíces reales y diferentes.
@@ -154,6 +154,42 @@ Y por último se encuentra la solución en el dominio del tiempo:
 
 $$f(t) = 2e^t + e^{3t}$$
 ### 📚 Ejercicio 2
+Halle la transformada inversa de la función F(S):
+
+$$F(S) = \frac{2s-8}{(s^2-5s+6)}$$
+$$F(S) = \frac{2s-8}{(s-2)(s-3)}$$
+
+$$F(S) = \frac{2s-8}{(s-2)(s-3)} = \frac{A}{(s-2)} + \frac{B}{(s-3)} $$
+
+$$ \frac{(s-2)(s-3)(3s-7)}{(s-2)(s-3)} \frac{(s-2)(s-3)A}{(s-2)} + \frac{(s-2)(s-3)B}{(s-3)} $$
+
+$$ 2s-9 = (s-3)A + (s-2)B $$
+
+Al evaluar s = 2:
+
+$$ 2(2)-8 = (2-3)A + (2-2)B $$
+$$ -4 = (-1)A + (0)B $$
+$$ A =  \frac{-4}{-1} $$
+$$ A = 4 $$
+
+Al evaluar s = 3:
+
+$$ 2(3)-8 = (3-3)A + (3-2)B $$
+$$ -2 = (0)A + (1)B $$
+$$ B =  \frac{-2}{1} $$
+$$ B = -2 $$
+
+Se reemplaza:
+
+$$F(S) = \frac{4}{(s-2)} + \frac{-2}{(s-3)} $$
+
+$$\mathcal{L}^{-1} \{ F(s) \} = \mathcal{L}^{-1} \left( \frac{4}{(s-2)} \right) + \mathcal{L}^{-1} \left(  \frac{-2}{(s-3) \right)$$
+
+$$\mathcal{L}^{-1} \{ F(s) \} = 4* \mathcal{L}^{-1} \left( \frac{1}{s - 2} \right) + -2*\mathcal{L}^{-1} \left( \frac{1}{s - 3} \right)$$
+
+Y por último se encuentra la solución en el dominio del tiempo: 
+
+$$f(t) = 4e^{2t} -2 e^{3t}$$
 ## 10. Conclusiones
 En esta sesión, se exploraron conceptos fundamentales para el estudio y análisis de sistemas dinámicos. Se comprendió qué es un sistema y cómo se diferencia un sistema dinámico de uno estático, destacando la importancia del su variabilidad en el timpo. También se analizó la distinción entre una planta y un proceso, que a pesar que en control sean considerados sinónimos, no lo son.
 
