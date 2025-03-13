@@ -6,17 +6,27 @@ En la sesión del 19 de febrero, se profuncizó en la descomposición en fraccio
 ## 2. TL Inversa: Fracciones parciales
 En la clase del 12 de febrero, se evidenció el caso 1: *Raíces reales y diferentes*, a continuación se presentan los dos casos restantes:
 ### Caso 2: raíces reales repetidas
->🔑 *Sistema:* Un sistema es una combinación de componentes que interactúan entre sí con el propósito de alcanzar un objetivo específico. Esta interacción puede representarse mediante reglas o relaciones matemáticas que establecen cómo las entradas del sistema afectan sus salidas.
+En el denomidador de F(s) hay factores reales que se repiten; al igual que en el caso 1, la idea es determinar coeficientes que vayan con un denominador diferente y esta nueva función sea igual que F(s):
 
-![Figura 1](Imagenes/sistema.png)
+$$F(s) = \frac{P(s)}{Q(s)} = \frac{P(S)}{(s+p)^n}$$
 
-Figura 1. Sistema
+$$F(s) = \frac{A}{(s+p)} + \frac{B}{(s+p)^2} + \dots + \frac{N}{(s+p)^n}
 
-A partir de modelos matemáticos, se representa lo que ocurre en la variable de salida si se modifica la entrada del sistema. En la Figura 1 se representa de manera básica un sistema.
-### 2.2. Sistema dinámico
->🔑 *Sistema dinámico:* Se le llama sistema dinámico al sistema donde la salida en el presente depende de una entrada del pasado.
+Se realizó el siguiente ejemplo en clase:
 
-A diferencia de un sistema estático, donde la salida solo depende de la entrada en curso. La dinámica de un sistema se basa en variables que varían respecto al tiempo. En pocas palabras, es un sistema que cambia a través del tiempo. 
+💡Ejemplo: Determine en la función del tiempo F(s).
+
+$$G(s) = \frac{2s^2 + 6s + 5}{(s+2)(s+1)^2}$$
+### Caso 3: Raíces complejas conjugadas.
+En el último caso, es importante tener en cuenta la factorización. Para que este caso suceda, debe haber una expresión cuya solución no se pueda expresar con reales, sino, que se pasa al plano complejo. Para ello, se tiene en cuenta el discriminante de la ecuación cuadrática, donde:
+
+$$d > 0 \to $$ Raíces reales y diferentes
+
+$$d > 0 \to $$ Raíces reales e iguales
+Sin embargo:
+
+$$d < 0 \to $$ Raíces complejas conjugadas
+
 ### 2.3. Planta
 >🔑 *Planta:* Es la parte física del sistema que se quiere controlar.
 
