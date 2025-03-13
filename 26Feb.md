@@ -53,20 +53,33 @@ $$F(s) = \frac{s^2 + 2s + 3}{(s^2+2s+2)(s^2+2s+5)}$$
 ## 3. Solución de ED con Laplace
 Para solucionar ecuaciones diferenciales con la Transformada de laplace, es fundamental tener en cuenta:
 ##### A. Conocimiento de las condiciones iniciales
+Es imprescindible el conocimiento de las condiciones iniciales de la ecuación. La función evaluada en 0, y la derivada de orden (n-1) evaluada en 0.
 ##### B. Transformada de la derivada
+Se hace uso de la transformada de la derivada, se reemplaza en las derivadas y se opera con los distintos factores de la ED que se quiere solucionar. A continuación se evidencia la transformada de la derivada:
+
+$$\mathcal{L} \left\{ \frac{df}{dt} \right\} = sF(s) - f(0)$$
+
+$$\mathcal{L} \left\{ \frac{d^2 f}{dt^2} \right\} = s^2 F(s) - s f(0) - f'(0)$$
+
+$$\mathcal{L} \left\{ \frac{d^n f}{dt^n} \right\} = s^n F(s) - s^{n-1} f(0) - s^{n-2} f'(0) - \dots - s f^{(n-2)}(0) - f^{(n-1)}(0)$$
 ##### C. Linealidad
+Se debe aplicar la transformada de Laplace a todos los términos, gracias al concepto de linealidad. Con ayuda de la transformada de la derivada, se aplica TL a todos los términos.
 ##### D. Despeje de la función de salida
+Al aplicar la transformada de la derivada, se factoriza F(S) y se despeja, para hallar la función en el dominio de la frecencia compleja.
 ##### E. Aplicación de transformada de Laplace inversa
+Cuando se determina F(S), se hace uso de la transformada de Laplace inversa para regresar al dominio del tiempo y determinar al fin la solución de la ED.
+💡Ejemplo: Solucione la siguiente ED
 ## 4. Ejercicios
 ### 📚 Ejercicio 1
 ### 📚 Ejercicio 2
 ## 5. Aplicaciones solución ED en MATLAB
 ### 5.1. Solución analítica
 ## 6. Conclusiones
-Los métodos vistos en esta sesión permiten una resolución mucho más eficiente de fracciones parciales en comparación con el enfoque basado en sistemas de ecuaciones. Al simplificar el cálculo de coeficientes, se pueden abordar problemas complejos de manera más directa y estructurada.
+Los métodos vistos en esta sesión permiten una resolución mucho más eficiente de fracciones parciales en comparación con el enfoque basado en sistemas de ecuaciones. Al simplificar el cálculo de coeficientes, se pueden abordar problemas complejos de manera más directa y estructurada, además que es posible mezclar los métodos según sea más cómodo para cada individuo; no hay un orden estricto para emplear los métodos.
 
 Asimismo, se comprendió la importancia de la Transformada de la Derivada y su papel en la solución de ecuaciones diferenciales mediante la Transformada de Laplace. Un punto clave fue reconocer por qué es indispensable contar con condiciones iniciales al resolver una ecuación diferencial en este dominio, ya que estas permiten determinar una solución única y garantizar la correcta transformación inversa al dominio del tiempo.
 
 Finalmente, se resaltó que existen múltiples formas de analizar el comportamiento de un sistema, tanto de manera analítica como numérica. En este contexto, MATLAB se convierte en una herramienta invaluable, facilitando la comparación entre métodos y permitiendo verificar soluciones de manera rápida y precisa.
+
 ## 7. Referencias
-Agregue un subtítulo al final donde pueda p
+
