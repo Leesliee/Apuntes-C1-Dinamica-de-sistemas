@@ -105,9 +105,9 @@ $$\mathcal{L} \{ f^{n}(t) \} = s^n F(s) - s^{n-1} f(0) - \cdots - s f^{n-1}(0) -
 #### 7.2.3 Transformada de la integral
 \mathcal{L} \left\{ \int f(t) \, dt \right\} = \frac{1}{s} F(s)
 
-# 8. TL Inversa: Fracciones parciales
+## 8. TL Inversa: Fracciones parciales
 Para solucionar una ED, se hace uso de la TL, sin embargo en función la la frecuencia compleja no tiene alguna empleabilidad, por ende se debe volver al dominio del tiempo para hallar la solución de la ED. Mediante la definición se pueden determinar las transformadas y sus inversas; sin embargo, existe una "Tabla de transformadas", la cual será fundamental para llegar nuevamente al dominio del tiempo. Por ahora se verá un repaso de fracciones parciales; pues es fundamental llegar a la expresión más "reducida"  y leer la tabla de transformadas mucho más sencillo. En esta sesión se recordó el primer caso: raíces reales y diferentes.
-## Caso 1: Raíces reales y diferentes
+### Caso 1: Raíces reales y diferentes
 En el denominador de F(S), hay diferentes factores lineales que no se repiten. La intención es separar cada fracción con un numerador A, B, C,..., n:
 
 $$F(S) = \frac{P(s)}{Q(s)} = \frac{P(S)}{(s + p_1)(s + p_2) \dotsm (s + p_n)}$$
