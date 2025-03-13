@@ -103,7 +103,7 @@ $$ \mathcal{L}\ {f(t)\} = F(S)$$
 #### 7.2.2 Transformada de la derivada
 $$\mathcal{L} \{ f^{n}(t) \} = s^n F(s) - s^{n-1} f(0) - \cdots - s f^{n-1}(0) - f^n(0)$$
 #### 7.2.3 Transformada de la integral
-\mathcal{L} \left\{ \int f(t) \, dt \right\} = \frac{1}{s} F(s)
+$$\mathcal{L} \left\{ \int f(t) \, dt \right\} = \frac{1}{s} F(s)$$
 
 ## 8. TL Inversa: Fracciones parciales
 Para solucionar una ED, se hace uso de la TL, sin embargo en función la la frecuencia compleja no tiene alguna empleabilidad, por ende se debe volver al dominio del tiempo para hallar la solución de la ED. Mediante la definición se pueden determinar las transformadas y sus inversas; sin embargo, existe una "Tabla de transformadas", la cual será fundamental para llegar nuevamente al dominio del tiempo. Por ahora se verá un repaso de fracciones parciales; pues es fundamental llegar a la expresión más "reducida"  y leer la tabla de transformadas mucho más sencillo. En esta sesión se recordó el primer caso: raíces reales y diferentes.
@@ -152,7 +152,7 @@ $$\mathcal{L}^{-1} \{ F(s) \} = 2* \mathcal{L}^{-1} \left( \frac{1}{s - 1} \righ
 
 Y por último se encuentra la solución en el dominio del tiempo: 
 
-$$f(t) = 2e^t + e^(3t)$$
+$$f(t) = 2e^t + e^{3t}$$
 ### 📚 Ejercicio 2
 ## 10. Conclusiones
 En esta sesión, se exploraron conceptos fundamentales para el estudio y análisis de sistemas dinámicos. Se comprendió qué es un sistema y cómo se diferencia un sistema dinámico de uno estático, destacando la importancia del su variabilidad en el timpo. También se analizó la distinción entre una planta y un proceso, que a pesar que en control sean considerados sinónimos, no lo son.
